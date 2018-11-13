@@ -2,9 +2,14 @@
 - conda 基本命令
 ```
 # https://poweruphosting.com/blog/install-anaconda-python-ubuntu-16-04/
-# 进入 conda prompt 环境
+# 进入和退出 conda prompt 环境
 conda activate # 会进入 base 环境
 conda deactivate # 退出
+
+# conda 列出所有的创建的环境
+conda env list
+or 
+conda inf --env
 
 # 更新 conda
 conda update conda
