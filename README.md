@@ -27,6 +27,36 @@ Ctrl+Shift+P 打开 package install，输入 SublimeREPL 并安装
 
 ```
 
+- sublime text3 conda 环境配置
+```
+# Ctrl + Shift + P, 并输入 package install 
+# 输入 anaconda，点击安装
+# 在 Preferences -> Package setting -> Anaconda -> setting -default 下：
+"python_interpreter": "D:\\Miniconda3\\python.exe",
+
+# setting -User 下:
+{
+    "python_interpreter": "D:\\Miniconda3\\python.exe",
+    "suppress_word_completions": true,
+    "suppress_explicit_completions": true,
+    "complete_parameters": true,
+    "swallow_startup_errors": true,
+    "anaconda_linting": false,
+}
+
+# 在 Tools -> Build system -> New build Sytem:
+{
+	"cmd": ["python3.exe", "-u", "$file"],
+	"path": "D:\\Miniconda3\\python.exe;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v9.0\\bin;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v9.0\\libnvvp", 
+	"file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+	"selector": "source.python",
+	"encoding": "cp936"
+}
+
+并保存为 Anaconda.sublime-build
+
+```
+
 - ngrok 配置步骤
 ```
 启动 ngrokd
