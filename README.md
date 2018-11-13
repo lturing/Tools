@@ -4,6 +4,7 @@
 # https://poweruphosting.com/blog/install-anaconda-python-ubuntu-16-04/
 # 进入 conda prompt 环境
 conda activate # 会进入 base 环境
+deactivate # 退出
 
 # 更新 conda
 conda update conda
