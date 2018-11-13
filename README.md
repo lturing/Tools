@@ -29,6 +29,7 @@ Ctrl+Shift+P 打开 package install，输入 SublimeREPL 并安装
 
 - sublime text3 conda 环境配置
 ```
+# reference http://damnwidget.github.io/anaconda/
 # Ctrl + Shift + P, 并输入 package install 
 # 输入 anaconda，点击安装
 # 在 Preferences -> Package setting -> Anaconda -> setting -default 下：
