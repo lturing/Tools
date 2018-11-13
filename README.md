@@ -1,4 +1,29 @@
 # Tools
+- conda 基本命令
+```
+# https://poweruphosting.com/blog/install-anaconda-python-ubuntu-16-04/
+# 进入 conda prompt 环境
+conda activate # 会进入 base 环境
+
+# 更新 conda
+conda update conda
+
+# 卸载
+conda install anaconda-clean
+
+# 新建一个虚拟环境
+conda create --name python python=3 # 默认版本
+or
+conda create -n python python=3
+conda create --name python python=3.6 # 指定版本
+
+# 删除某个环境
+conda remove --name python --all
+or 
+conda remove -n python --all
+
+```
+
 - sublime text3 添加 python 交互式输入
 ```
 Ctrl+Shift+P 打开 package install，输入 SublimeREPL 并安装
