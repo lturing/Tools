@@ -58,9 +58,18 @@ Ctrl+Shift+P 打开 package install，输入 SublimeREPL 并安装
 
 ```
 
+- conda 更新源
+
+```
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+conda config --set show_channel_urls yes
+```
+
+
 - ngrok 配置步骤
 ```
 启动 ngrokd
 /opt/ngrok/bin/ngrokd -tlsKey=server.key -tlsCrt=server.crt -domain="tlcloud.top" -httpAddr=":8081" -httpsAddr=":8082" -tunnelAddr=":80"
 
 ```
+
