@@ -14,6 +14,12 @@ conda inf --env
 # 更新 conda
 conda update conda
 
+# 更新 包
+conda update package_name # conda update numpy 
+
+# 更新 conda base 下的python 版本
+conda install python=3.5
+
 # 卸载
 conda install anaconda-clean
 
