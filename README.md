@@ -125,3 +125,7 @@ index-url = https://pypi.tuna.tsinghua.edu.cn/simple
 
 ```
 
+- ffmpeg 
+```
+ffmpeg -i input.mp4 -i subtitle.srt -map 0 -map 1 -c copy -c:v libx264 -crf 23 -preset veryfast output.mp4
+```
