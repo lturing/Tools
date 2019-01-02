@@ -1,4 +1,26 @@
 # Tools
+
+-----------------------------------
+
+- teamviewer on linux
+```
+teamviewer help # list all available commands
+teamviewer info # show teamviewer id
+teamviewer passwd # set password
+teamviewer setup # assign device to account
+```
+> If you assign a device to your account, you don't need to set a password. Just follow the setup assistent and your done. The device will then show up in your Computers & Contacts.
+An example installation and setup would look like this:
+```
+$ apt install ./teamviewer*.deb
+$ teamviewer setup
+Please enter your e-mail: mail@example.org
+Please enter your password: ******
+You have successfully added this computer to your Computers & Contacts.
+```
+
+----------------------------
+
 - conda 基本命令
 ```
 # https://poweruphosting.com/blog/install-anaconda-python-ubuntu-16-04/
@@ -36,6 +58,34 @@ conda remove -n python --all
 
 ```
 
+--------------------------
+
+- conda 更新源
+
+```
+# reference https://blog.csdn.net/sxf1061926959/article/details/54091748 
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+conda config --set show_channel_urls yes
+```
+
+----------------------
+
+- pip 更换源
+```
+# reference https://blog.csdn.net/sxf1061926959/article/details/54091748 
+Linux下： 
+修改 ~/.pip/pip.conf (没有就创建一个)， 修改 index-url至tuna，内容如下：
+[global]
+index-url = https://pypi.tuna.tsinghua.edu.cn/simple
+
+windows下: 
+直接在user目录中创建一个pip目录，如：C:\Users\xxxx\pip，新建文件pip.ini，内容如下
+[global]
+index-url = https://pypi.tuna.tsinghua.edu.cn/simple
+```
+
+----------------------------
+
 - sublime text3 添加 python 交互式输入
 ```
 Ctrl+Shift+P 打开 package install，输入 SublimeREPL 并安装
@@ -63,6 +113,8 @@ Ctrl+Shift+P 打开 package install，输入 SublimeREPL 并安装
 ]
 
 ```
+
+-------------------------------
 
 - sublime text3 conda 环境配置
 ```
@@ -95,27 +147,7 @@ Ctrl+Shift+P 打开 package install，输入 SublimeREPL 并安装
 
 ```
 
-- conda 更新源
-
-```
-# reference https://blog.csdn.net/sxf1061926959/article/details/54091748 
-conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
-conda config --set show_channel_urls yes
-```
-
-- pip 更换源
-```
-# reference https://blog.csdn.net/sxf1061926959/article/details/54091748 
-Linux下： 
-修改 ~/.pip/pip.conf (没有就创建一个)， 修改 index-url至tuna，内容如下：
-[global]
-index-url = https://pypi.tuna.tsinghua.edu.cn/simple
-
-windows下: 
-直接在user目录中创建一个pip目录，如：C:\Users\xxxx\pip，新建文件pip.ini，内容如下
-[global]
-index-url = https://pypi.tuna.tsinghua.edu.cn/simple
-```
+----------------------
 
 
 - ngrok 配置步骤
@@ -124,6 +156,8 @@ index-url = https://pypi.tuna.tsinghua.edu.cn/simple
 /opt/ngrok/bin/ngrokd -tlsKey=server.key -tlsCrt=server.crt -domain="tlcloud.top" -httpAddr=":8081" -httpsAddr=":8082" -tunnelAddr=":80"
 
 ```
+
+------------------------------------
 
 - ffmpeg 
 ```
