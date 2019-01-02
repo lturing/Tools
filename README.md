@@ -2,6 +2,23 @@
 
 -----------------------------------
 
+- docker
+[deepo](https://github.com/ufoym/deepo)
+```
+docker ps -a # list all containers (stoped and running)
+docker ps # list all running containers
+docker images # list all images
+docker pull image_name
+docker run -it -d --name gived_a_name image_name # create a new containers 
+docker run -it -d --name spurs_gpu --runtime=nvidia ufoym/deepo /bin/bash
+docker exec -it container_id /bin/bash
+docker inspect container_name 
+docker restart/start/stop/kill container_name or container_id 
+```
+
+
+--------------------------------
+
 - teamviewer on linux
 ```
 teamviewer help # list all available commands
