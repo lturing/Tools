@@ -6,8 +6,10 @@
 ```
 teamviewer help # list all available commands
 teamviewer info # show teamviewer id
-teamviewer passwd # set password
-teamviewer setup # assign device to account
+sudo teamviewer passwd # set password
+sudo teamviewer setup # assign device to account
+sudo teamviewer --daemon restart # restart deamon
+sudo teamviewer --setup console #设置启动方式为控制台启动
 ```
 > If you assign a device to your account, you don't need to set a password. Just follow the setup assistent and your done. The device will then show up in your Computers & Contacts.
 An example installation and setup would look like this:
