@@ -1,3 +1,4 @@
+- re.sub
 ```python
 import re
 log = "you may feel fine, but the muscle spasms  could start at any--"
