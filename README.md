@@ -158,7 +158,7 @@ Ctrl+Shift+P 打开 package install，输入 SublimeREPL 并安装
 	"path": "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v9.0\\bin;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v9.0\\libnvvp", 
 	"file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
 	"selector": "source.python",
-	"encoding": "cp936",
+	//"encoding": "cp936",
 	"env": { "PYTHONIOENCODING": "utf8" },
 }
 
