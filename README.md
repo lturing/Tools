@@ -9,7 +9,6 @@ tlmgr conf texmf OSFONTDIR "文件夹路径" # tlmgr conf texmf OSFONTDIR D:\lat
 ```
 > 目录 D:\latex_chinese_fonts\fonts 下有 AdobeFangsongStd-Regular.otf, AdobeHeitiStd-Regular.otf, AdobeKaitiStd-Regular.otf, AdobeSongStd-Light.otf
 
-#### ref 
 [LaTeX如何调用Adobe Fonts下载好的字体？](https://www.zhihu.com/question/309633709/answer/577464468)    
 [模板1](https://github.com/raytaylorlin/hust-graduation-thesis-pandoc)      
 [模板2](https://github.com/hust-latex/hustthesis)       
