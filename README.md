@@ -5,7 +5,7 @@
 - texlive + sublime text 3 + latexTools(sublime text plugin) + sumatrapdf [ref1  ](https://blog.csdn.net/Galoa/article/details/79587751)[  ref2](https://blog.hcl.moe/archives/1737)
 ```
  latexTools settings:
-Package Settings->LaTeXTools->Settings – User
+Preferences -> Package Settings -> LaTeXTools -> Settings – User
 修改texpath的值为的TeXLive安装目录下bin下的win32目录的路径，例如 C:\texlive\bin\win32
 distro 的值修改为 texlive
 sumtra的值修改为安装的 SumatraPDF 的路径（dirname)
