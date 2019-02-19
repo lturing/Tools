@@ -2,6 +2,23 @@
 
 -----------------------------------
 
+- texlive + sublime text 3 + latexTools(sublime text plugin) + sumatrapdf 
+> latexTools settings:
+Package Settings->LaTeXTools->Settings – User
+修改texpath的值为的TeXLive安装目录下bin下的win32目录的路径，例如 C:\texlive\bin\win32
+distro 的值修改为 texlive
+sumtra的值修改为安装的 SumatraPDF 的路径（dirname)
+为了bibtex + latex
+"builder": 项（默认为"traditional"）改为"script"
+在"Builder_Settings"：下对应的系统中（windows系统为windows，MAC为OXS）添加下面代码：
+	"script_commands":[
+		"pdflatex -synctex=1 -interaction=nonstopmode",
+		"bibtex",
+		"pdflatex -synctex=1 -interaction=nonstopmode",
+		"pdflatex -synctex=1 -interaction=nonstopmode"
+	]
+按下Ctrl+B后在下拉选项中选择Script builder方式进行编译，这样以后编译就默认使用script方式了。
+
 
 - 给 texlive 安装中文字体(宋体、黑体、仿宋、楷体字体)
 ```cmd
