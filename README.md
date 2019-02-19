@@ -2,7 +2,7 @@
 
 -----------------------------------
 
-- texlive + sublime text 3 + latexTools(sublime text plugin) + sumatrapdf 
+- texlive + sublime text 3 + latexTools(sublime text plugin) + sumatrapdf [ref1  ](https://blog.csdn.net/Galoa/article/details/79587751)[  ref2](https://blog.hcl.moe/archives/1737)
 ```
  latexTools settings:
 Package Settings->LaTeXTools->Settings – User
