@@ -2,6 +2,14 @@
 
 -----------------------------------
 
+- ubuntu mount disk
+```bash
+sudo fdisk -l # 查看硬盘的路径
+sudo mount /dev/sda1 /media/disk2  # 将/dev/sda1 挂在到 目录 /media/disk2
+```
+
+-------------------------------------
+
 - texlive + sublime text 3 + latexTools(sublime text plugin) + sumatrapdf [ref1  ](https://blog.csdn.net/Galoa/article/details/79587751)[  ref2](https://blog.hcl.moe/archives/1737)
 ```
  latexTools settings:
