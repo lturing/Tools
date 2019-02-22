@@ -38,7 +38,7 @@ tlmgr conf texmf OSFONTDIR "文件夹路径" # tlmgr conf texmf OSFONTDIR D:\lat
 [deepo](https://github.com/ufoym/deepo)
 ```
 sudo usermod -aG docker $USER # add current user to group docker
-sudo systemctl restart docker # 当docker ps -a 容器不见后，可以重启docekr
+sudo systemctl restart docker # 当docker ps -a 容器不见后，可以重启docekr； 守护进程重启   sudo systemctl daemon-reload
 docker ps -a # list all containers (stoped and running)
 docker ps # list all running containers
 docker images # list all images
