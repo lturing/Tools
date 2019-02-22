@@ -48,6 +48,8 @@ docker run -it -d --name spurs_gpu --runtime=nvidia ufoym/deepo /bin/bash
 docker exec -it container_id /bin/bash
 docker inspect container_name 
 docker restart/start/stop/kill container_name or container_id 
+docker rm -f 容器id # (docker ps -a)
+docker rmi 镜像id # (docker images)
 ```
 
 
