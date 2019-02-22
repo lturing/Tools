@@ -53,7 +53,7 @@ docker images # list all images
 docker pull image_name
 docker run -it -d --name gived_a_name image_name # create a new containers 
 docker run -it -d --name spurs_gpu --runtime=nvidia ufoym/deepo /bin/bash
-docker run -it -d --name spurs-gpu -v /media/disk2/spurs --runtime=nvidia ufoym/deepo /bin/bash # docker 与 宿主共享文件夹/media/disk2/spurs
+docker run -it -d --name spurs-gpu -v /media/disk2/spurs:/media/disk2/spurs --runtime=nvidia ufoym/deepo /bin/bash # docker 与 宿主共享文件夹/media/disk2/spurs
 docker exec -it container_id /bin/bash
 docker inspect container_name 
 docker restart/start/stop/kill container_name or container_id 
