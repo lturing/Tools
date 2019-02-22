@@ -37,6 +37,7 @@ tlmgr conf texmf OSFONTDIR "文件夹路径" # tlmgr conf texmf OSFONTDIR D:\lat
 - docker
 [deepo](https://github.com/ufoym/deepo)
 ```
+sudo usermod -aG docker $USER # add current user to group docker
 docker ps -a # list all containers (stoped and running)
 docker ps # list all running containers
 docker images # list all images
