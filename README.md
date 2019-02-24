@@ -2,6 +2,20 @@
 
 -----------------------------------
 
+- vim 缩进等配置
+```bash
+sudo vim /etc/vim/vimrc # 在末尾添加以下:
+
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+set expandtab 
+set nu # 显示行号
+set autoindent # 自动缩进(自动调整已有的缩进到指定 tab 的空格数？)
+```
+
+--------------------------------------------
+
 - ubuntu mount disk
 ```bash
 sudo fdisk -l # 查看硬盘的路径
