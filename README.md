@@ -6,12 +6,12 @@
 ```bash
 sudo vim /etc/vim/vimrc # 在末尾添加以下:
 
-set tabstop=4 #The width of a hard tabstop measured in "spaces" -- effectively the (maximum) width of an actual tab character.
-set shiftwidth=4 # The size of an "indent". It's also measured in spaces, so if your code base indents with tab characters then you want shiftwidth to equal the number of tab characters times tabstop. This is also used by things like the =, > and < commands.
-set softtabstop=4 # Setting this to a non-zero value other than tabstop will make the tab key (in insert mode) insert a combination of spaces (and possibly tabs) to simulate tab stops at this width.
-set expandtab # Enabling this will make the tab key (in insert mode) insert spaces instead of tab characters. This also affects the behavior of the retab command.
-set nu # 显示行号
-set autoindent # 自动缩进(自动调整已有的缩进到指定 tab 的空格数？)
+set tabstop=4 "The width of a hard tabstop measured in "spaces" -- effectively the (maximum) width of an actual tab character.
+set shiftwidth=4 " The size of an "indent". It's also measured in spaces, so if your code base indents with tab characters then you want shiftwidth to equal the number of tab characters times tabstop. This is also used by things like the =, > and < commands.
+set softtabstop=4 " Setting this to a non-zero value other than tabstop will make the tab key (in insert mode) insert a combination of spaces (and possibly tabs) to simulate tab stops at this width.
+set expandtab " Enabling this will make the tab key (in insert mode) insert spaces instead of tab characters. This also affects the behavior of the retab command.
+set nu " 显示行号
+set autoindent " 自动缩进(自动调整已有的缩进到指定 tab 的空格数？)
 
 For more details on any of these see :help 'optionname' in vim (e.g. :help 'tabstop')
 ```
