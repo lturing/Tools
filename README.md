@@ -17,6 +17,11 @@ or
 # sudo apt update && upgrade
 ```
 
+- 树莓派命令
+```
+sudo raspi-config # 配置
+raspistill -o test.jpg # 拍照
+```
 -----------------------------------
 
 - vim 缩进等配置
