@@ -52,6 +52,7 @@ or
 
 - 树莓派命令
 ```
+# https://picamera.readthedocs.io/en/release-1.13/recipes1.html
 sudo raspi-config # 配置
 raspistill -o test.jpg # 拍照
 /etc/rc.local # 开机自启( 自启的命令放在 exit 0 之前）
