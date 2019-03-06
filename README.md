@@ -2,6 +2,11 @@
 
 -----------------------------------
 
+- 树莓派软件源
+[http://www.raspbian.org/RaspbianMirrors](http://www.raspbian.org/RaspbianMirrors)
+
+-----------------------------------
+
 - vim 缩进等配置
 ```bash
 sudo vim /etc/vim/vimrc # 在末尾添加以下:
