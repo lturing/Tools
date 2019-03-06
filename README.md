@@ -1,5 +1,38 @@
 # Tools
 
+------------------------
+
+- 树莓派网线认证上网(hust)
+```
+sudo apt-get install gcc libc6-dev m4 flex bison
+wget http://www.tcpdump.org/release/libpcap-1.0.0.tar.gz
+tar zxvf libpcap-1.0.0.tar.gz
+cd libpcap-1.0.0/
+./configure 
+make 
+
+cd 
+
+wget https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/mentohust/mentohust-0.3.1.tar.gz
+sudo apt-get install build-essential bison flex zlib1g-dev libncurses5-dev subversion quilt intltool ruby fastjar unzip gawk 
+tar zxvf mentohust-0.3.1.tar.gz
+cd mentohust-0.3.1 
+./configure --disable-encodepass --disable-arp --disable-notify --disable-nls --with-pcap=/home/pi/libpcap-1.0.0/libpcap.a
+make 
+
+
+# start
+sudo /home/pi/mentohust-0.3.1/src/mentohust -uM201721213 -p111234 -neth0 -o0.0.0.0 -t8 -e30 -r15 -a0 -d1 -b2 -v4.10 -cdhclient
+
+
+# stop
+sudo /home/pi/mentohust-0.3.1/src/mentohust -k
+
+
+# help
+# /home/pi/mentohust-0.3.1/src/mentohust --help
+```
+
 -----------------------------------
 
 - 树莓派软件源   
