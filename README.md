@@ -6,9 +6,15 @@
 [http://www.raspbian.org/RaspbianMirrors](http://www.raspbian.org/RaspbianMirrors)
 ```
 修改 
-/etc/apt/sources.list.d/raspi.list 和 
-/etc/apt/sources.list
+/etc/apt/sources.list.d/raspi.list  # 系统源
+和 
+/etc/apt/sources.list   # 软件源
 对应的地址
+
+sudo apt update 
+sudo apt upgrade 
+or
+# sudo apt update && upgrade
 ```
 
 -----------------------------------
