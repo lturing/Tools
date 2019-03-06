@@ -2,8 +2,14 @@
 
 -----------------------------------
 
-- 树莓派软件源
+- 树莓派软件源   
 [http://www.raspbian.org/RaspbianMirrors](http://www.raspbian.org/RaspbianMirrors)
+```
+修改 
+/etc/apt/sources.list.d/raspi.list 和 
+/etc/apt/sources.list
+对应的地址
+```
 
 -----------------------------------
 
