@@ -84,6 +84,14 @@ For more details on any of these see :help 'optionname' in vim (e.g. :help 'tabs
 ```
 [ref](https://stackoverflow.com/questions/1878974/redefine-tab-as-4-spaces)
 
+update 
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+set expandtab
+set autoindent
+
+
 --------------------------------------------
 
 - ubuntu mount disk
