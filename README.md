@@ -237,6 +237,14 @@ windows下:
 直接在user目录中创建一个pip目录，如：C:\Users\xxxx\pip，新建文件pip.ini，内容如下
 [global]
 index-url = https://pypi.tuna.tsinghua.edu.cn/simple
+
+ubuntu 全局
+/etc/pip.conf
+[global]
+index-url = https://pypi.tuna.tsinghua.edu.cn/simple
+[install]
+trusted-host=mirrors.aliyun.com
+
 ```
 
 ----------------------------
