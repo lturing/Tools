@@ -15,17 +15,21 @@ cd /usr/local/lib/python3.5/dist-packages/matplotlib/mpl-data/
 cd ./fonts/ttf
 # 将 第2步中的转换后的结果发到这个目录下.
 ```
+
 测试
+```python
 import matplotlib as mpl
 mpl.rcParams['font.family'] = 'Microsoft YaHei'
 mpl.rcParams['font.sans-serif'] = ['Microsoft YaHei']
 mpl.rcParams['font.size'] = 20
-
 import matplotlib.pyplot as plt
-
 a = [i for i in range(100)]
 plt.plot(a)
-plt.legend(['x轴'])
+plt.legend(['中文测试'])
+plt.xlabel('索引值')
+plt.ylabel('值')
+plt.tight_layout() #自动调整布局
+#plt.figsave('test.pdf', bbox_inches='tight') # 自动调整布局
 plt.show()
 ```
 
