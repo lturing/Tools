@@ -1,5 +1,35 @@
 # Tools
 
+-----------------------------
+
+- matplotlib 画图支持中文
+```
+1, 在win10下 C:\Windows\Fonts 下 搜索 yahei(在本人的电脑下有：Microsoft YaHei UI 常规、Microsoft YaHei UI 粗体、Microsoft YaHei UI 细体)，本人选了常规。
+2, 由于上一步中的格式ttc，matplotlib字体的格式是ttf，故到 [网站](https://transfonter.org/ttc-unpack)转成ttf，结果会有(MicrosoftYaHei-01.ttf、MicrosoftYaHeiUI-02.ttf)
+
+3，调用以下命令
+python3 -c "import matplotlib;print(matplotlib.matplotlib_fname())" 
+# 输出结果例如：
+/usr/local/lib/python3.5/dist-packages/matplotlib/mpl-data/matplotlibrc 
+cd /usr/local/lib/python3.5/dist-packages/matplotlib/mpl-data/ 
+cd ./fonts/ttf
+# 将 第2步中的转换后的结果发到这个目录下.
+```
+测试
+import matplotlib as mpl
+mpl.rcParams['font.family'] = 'Microsoft YaHei'
+mpl.rcParams['font.sans-serif'] = ['Microsoft YaHei']
+mpl.rcParams['font.size'] = 20
+
+import matplotlib.pyplot as plt
+
+a = [i for i in range(100)]
+plt.plot(a)
+plt.legend(['x轴'])
+plt.show()
+```
+
+
 ------------------------
 
 - 树莓派无显示器，无路由器安装系统
