@@ -367,4 +367,6 @@ Ctrl+Shift+P 打开 package install，输入 SublimeREPL 并安装
 - ffmpeg 
 ```
 ffmpeg -i input.mp4 -i subtitle.srt -map 0 -map 1 -c copy -c:v libx264 -crf 23 -preset veryfast output.mp4
+ffmpeg -i D:\\movies\\Birds.mkv -filter_complex "[0:4]pan=1c|c0=FC" D:\\movies\\Birds_ch.wav # 提取5.1声道中的fc(front center)声道
+ffmpeg -i Birds.mkv -map 0:3 -map_channel 0:3:2 Birds_ch.wav #等价于上面的命令
 ```
