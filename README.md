@@ -3,10 +3,12 @@
 ---------------------------
 
 - vim
+```
 enable mouse clip in vim environment
 create ~/.vimrc and add the following line 
 set mouse=r
 source ./vimrc
+```
 
 ----------------------------
 
