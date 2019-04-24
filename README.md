@@ -8,6 +8,11 @@ cat /etc/shells
 sudo apt install zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
+可能需要运行
+chsh -s /bin/zsh # or
+chsh -s $(which zsh) # or 
+sudo usermod -s /bin/zsh spurs # spurs is current user
+
 命令
 d # 快速回到历史目录
 
