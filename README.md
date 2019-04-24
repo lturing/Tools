@@ -1,5 +1,23 @@
 # Tools
 
+---------------------------
+
+- zsh
+```
+cat /etc/shells 
+sudo apt install zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+命令
+d # 快速回到历史目录
+
+修改默认主题
+vim ~/.zhrc
+ZSH_THEME="robbyrussel"
+
+```
+
+
 -----------------------------
 
 - matplotlib 画图支持中文
