@@ -417,6 +417,7 @@ ffmpeg -i demo.mp4 -vf ass=subtitle.ass output.mp4
 ```
 
 - 合并视频
+```
 1, 首先将需要合并的文件按照一定的格式写入到文件，例如新建文件 file.txt，并其中写入以下内容             
 file '1540353_part1.flv'      
 file '1540353_part2.flv'          
@@ -425,5 +426,6 @@ file '1540353_part3.flv'
                 
 2，合并命令                          
 ffmpeg -f concat -safe 0 -i file.txt -c copy output.mp4                       
-                           
+```
+
 ----------------------------------------------------------
