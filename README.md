@@ -3,7 +3,7 @@
 ---------------------------
 
 - pip
-* ModuleNotFoundError: No module named 'pip'
+	- ModuleNotFoundError: No module named 'pip'
 ```
 python -m ensurepip
 python -m pip install update pip
