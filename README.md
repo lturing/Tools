@@ -2,6 +2,15 @@
 
 ---------------------------
 
+- pip
+* ModuleNotFoundError: No module named 'pip'
+```
+python -m ensurepip
+python -m pip install update pip
+```
+
+---------------------------
+
 - 视频下载工具
 - aria2c
 - youtube-dl
