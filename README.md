@@ -2,6 +2,17 @@
 
 ---------------------------
 
+- 卸载 zsh的顺序
+1，su root && chsh -s /bin/bash YOUR_USERNAME (查看哪些用户使用zsh，通过 /etc/passwd)            
+2, sudo apt --purge remove zsh zsh-*               
+3, ~/.oh-my-zsh/tools/uninstall.sh                     
+
+- 卸载 zsh 后，无法登录解决方法
+1，sudo vim /etc/passwd ,将/bin/zsh 改为 /bin/bash                        
+
+
+-------------------------------------------
+
 - pip
 	- ModuleNotFoundError: No module named 'pip'
 ```
