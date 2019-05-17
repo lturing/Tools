@@ -7,7 +7,7 @@
 2, sudo apt --purge remove zsh zsh-*                                     
 3, ~/.oh-my-zsh/tools/uninstall.sh                                             
 
-- 卸载 zsh 后，无法登录解决方法                            
+- 卸载 zsh 后，无法登录解决方法(卸载前没有执行 chsh -s /bin/bash)                         
 1，sudo vim /etc/passwd ,将/bin/zsh 改为 /bin/bash                                        
 
 
