@@ -2,6 +2,24 @@
 
 ---------------------------
 
+- nginx 分享目录
+```
+sudo apt install nginx 
+cd /etc/nginx/site-availables
+# 在 default 文件中添加以下内容，位置在location{}的后面
+location /filesha {
+          alias /home/pi/fileshare/; # 需要分享的目录地址
+	  autoindex on;
+}
+# 新建需要分享的文件夹
+mkdir /home/pi/fileshare/
+
+# 重启nginx
+sudo systemctl restart nginx
+```
+
+-----------------------------------
+
 - 卸载 zsh的顺序                
 1，su root && chsh -s /bin/bash YOUR_USERNAME (查看哪些用户使用zsh，通过 /etc/passwd)                            
 2, sudo apt --purge remove zsh zsh-*                                     
