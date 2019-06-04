@@ -6,15 +6,30 @@
 
 ```
 sudo apt install jupyter 
-mkdir notebook && cd notebook && jupyter notebook # 创建 notebook目录，并以此目录为jupyter的文件保存路径，启动jupyter
+
+# 生成配置文件，即 ~/.jupyter/jupyter_notebook_config.py
+jupyter notebook --generate-config
+jupyter notebook --generate-config --allow-config # for root user when run as root 
+# 生成密码，即 ~/.jupyter/jupyter_notebook_config.json
+jupyter notebook password # 输入密码
+# 然后把里面的密码复制，密码的形式：sha1:67c9e60bb8b6:9ffede0825894254b2e042ea597d771089e11aed
+# 配置任何主机可访问，修改 ~/.jupyter/jupyter_notebook_config.py(并去掉该行最前面的# ，#代表注释)
+c.NotebookApp.ip='0.0.0.0' # 任意主机都可以访问
+c.NotebookApp.password = '刚刚复制的密码(本代码部分的第11行)'
+c.NotebookApp.open_browser = False
+c.NotebookApp.port = 1024 #端口，随便设置，只要不冲突
+
 # theme https://github.com/dunovank/jupyter-themes
 pip install jupyterthemes or pip install --upgrade jupyterthemes
 # 列出所有的主题
 jt -l
 
 # 启用某个主题
-jt -t chesterish
+jt -t gruvboxl # 护眼色
 jt -r 
+
+mkdir notebook && cd notebook && jupyter notebook # 创建 notebook目录，并以此目录为jupyter的文件保存路径，启动jupyter
+
 ```
 
 - nginx 分享目录
