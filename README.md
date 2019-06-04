@@ -2,6 +2,21 @@
 
 ---------------------------
 
+- jupyter 
+
+```
+sudo apt install jupyter 
+mkdir notebook && cd notebook && jupyter notebook # 创建 notebook目录，并以此目录为jupyter的文件保存路径，启动jupyter
+# theme https://github.com/dunovank/jupyter-themes
+pip install jupyterthemes or pip install --upgrade jupyterthemes
+# 列出所有的主题
+jt -l
+
+# 启用某个主题
+jt -t chesterish
+jt -r 
+```
+
 - nginx 分享目录
 ```
 sudo apt install nginx 
@@ -213,6 +228,10 @@ set softtabstop=4
 set expandtab
 set autoindent
 
+syntax on % 语法高亮
+filetype on
+filetype indent on
+ 
 
 --------------------------------------------
 
