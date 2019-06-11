@@ -2,6 +2,21 @@
 
 ---------------------------
 
+- python ping
+```python
+import os
+
+exit_code = os.system('ping -c 1 www.baidu.com &>/dev/null')
+
+if exit_code:
+    print('fail')
+else:
+    print('sucess')
+
+```
+
+--------------------------------
+
 - window 下合并视频
 
 copy /b *.ts face_plus.mp4 
