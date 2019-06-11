@@ -2,6 +2,25 @@
 
 ---------------------------
 
+- window 下合并视频
+
+copy /b *.ts face_plus.mp4 
+
+----------------------------
+
+
+- linux 创建用户
+
+```bash
+sudo usermod -aG sudo git # 创建用户git
+
+The a in ‘-aG’ is very important. Without it they’ll be removed from all other groups. You will need to either restart your shell/terminal or log out and back in for this to take effect. 
+```
+
+[ref](https://askubuntu.com/questions/2214/how-do-i-add-a-user-to-the-sudo-group)
+
+--------------------------------------------------------
+
 - jupyter 
 
 ```
