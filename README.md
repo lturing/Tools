@@ -27,7 +27,8 @@ copy /b *.ts face_plus.mp4
 - linux 创建用户
 
 ```bash
-sudo usermod -aG sudo git # 创建用户git
+sudo useradd git # 新建用户 git
+sudo usermod -aG sudo git # 将新建用户git加入sudo组
 
 The a in ‘-aG’ is very important. Without it they’ll be removed from all other groups. You will need to either restart your shell/terminal or log out and back in for this to take effect. 
 ```
