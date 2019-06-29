@@ -290,6 +290,7 @@ filetype indent on
 ```bash
 sudo fdisk -l # 查看硬盘的路径
 sudo mount /dev/sda1 /media/disk2  # 将/dev/sda1 挂在到 目录 /media/disk2
+sudo umount /dev/sda1
 ```
 
 -------------------------------------
