@@ -72,6 +72,15 @@ sudo apt install python3-pip
 sudo apt install python3-picamera
 ```
 
+#### pip 更换镜像源
+```
+su root # sudo passwd root 
+cd /root && mdkir .pip && cd .pip && vim .pip.conf 
+[global]
+index-url = https://pypi.tuna.tsinghua.edu.cn/simple
+trusted-host = pypi.tuna.tsinghua.edu.cn
+```
+
 #### 安装 hostapd
 > hostapd 的说明
 
