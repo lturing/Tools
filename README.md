@@ -1,6 +1,15 @@
 # Tools
 
----------------------------
+-------------------------
+
+- 更新linux软件源后的问题(包括树莓派)
+```
+1, The following signatures couldn't be verified because the public key is not available: NO_PUBKEY xxxxxxxx（'公钥编码'）
+apt-key adv --keyserver keyserver.ubuntu.com --recv-keys '公钥编码'
+```
+[ref](https://www.jianshu.com/p/a026d08ce5a2)
+
+-------------------------------
 
 - python ping
 ```python
