@@ -10,6 +10,9 @@ sudo ip link set wlan0 up
 or
 sudo ifup wlan0
 sudo ifdown wlan0
+or 
+sudo ifconfig wlan0 up
+sudo ifconfig wlan0 down
 ```
 
 ------------------------
