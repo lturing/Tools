@@ -81,7 +81,7 @@ sudo apt install hostapd
 sudo vim /etc/hostapd/hostapd.conf # adding the below contents.
 - for 2.4G wifi
 interface=wlan0
-ssid=network_name_here
+ssid=on_the_fly
 hw_mode=g
 channel=7
 ht_capab=[HT40][SHORT-GI-20][DSSS_CCK-40]
@@ -90,10 +90,11 @@ macaddr_acl=0
 auth_algs=1
 wpa=2
 ignore_broadcast_ssid=0
-wpa_passphrase=network_password_here
+wpa_passphrase=pleasure
 wpa_key_mgmt=WPA-PSK
 wpa_pairwise=TKIP
 rsn_pairwise=CCMP
+
 
 - for 5G wifi
 interface=wlan0
