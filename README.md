@@ -2,6 +2,18 @@
 
 -------------------------
 
+- linux cmd
+```bash
+- restart wlan0
+sudo ip link set wlan0 down
+sudo ip link set wlan0 up
+or
+sudo ifup wlan0
+sudo ifdown wlan0
+```
+
+------------------------
+
 - 更新linux软件源后的问题(包括树莓派)
 ```
 1, The following signatures couldn't be verified because the public key is not available: NO_PUBKEY xxxxxxxx（'公钥编码'）
