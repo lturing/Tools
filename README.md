@@ -5,6 +5,7 @@
 - 更新linux软件源后的问题(包括树莓派)
 ```
 1, The following signatures couldn't be verified because the public key is not available: NO_PUBKEY xxxxxxxx（'公钥编码'）
+解决方法：
 apt-key adv --keyserver keyserver.ubuntu.com --recv-keys '公钥编码'
 ```
 [ref](https://www.jianshu.com/p/a026d08ce5a2)
@@ -255,6 +256,25 @@ sudo apt update
 sudo apt upgrade 
 or
 # sudo apt update && upgrade
+
+
+实例(stretch)
+1.修改/etc/apt/source.list为以下内容:
+#deb http://raspbian.raspberrypi.org/raspbian/ stretch main contrib non-free rpi
+deb http://mirrors.ustc.edu.cn/raspbian/raspbian/ stretch main contrib non-free rpi
+# Uncomment line below then 'apt-get update' to enable 'apt-get source'
+#deb-src http://raspbian.raspberrypi.org/raspbian/ stretch main contrib non-free rpi
+deb-src http://mirrors.ustc.edu.cn/raspbian/raspbian/ stretch main contrib non-free rpi
+
+2, 修改/etc/apt/sources.list.d/raspi.list为以下内容
+#deb http://archive.raspberrypi.org/debian/ stretch main ui
+deb http://mirrors.ustc.edu.cn/archive.raspberrypi.org/debian/ stretch main ui
+# Uncomment line below then 'apt-get update' to enable 'apt-get source'
+#deb-src http://mirrors.ustc.edu.cn/debian/ stretch main ui
+deb-src http://mirrors.ustc.edu.cn/archive.raspberrypi.org/debian/ stretch main ui
+#deb-src http://archive.raspberrypi.org/debian/ stretch main ui
+
+
 ```
 
 - 树莓派命令
