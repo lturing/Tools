@@ -311,6 +311,7 @@ set softtabstop=4 " Setting this to a non-zero value other than tabstop will mak
 set expandtab " Enabling this will make the tab key (in insert mode) insert spaces instead of tab characters. This also affects the behavior of the retab command.
 set nu " 显示行号
 set autoindent " 自动缩进(自动调整已有的缩进到指定 tab 的空格数？)
+syntax on # syntax highlight
 
 For more details on any of these see :help 'optionname' in vim (e.g. :help 'tabstop')
 ```
