@@ -2,6 +2,19 @@
 
 -------------------------
 
+- change command ls result color (directory, file, etc)
+
+```bash
+#add the following color to ~/.bashrc
+LS_COLORS=$LS_COLORS:'tw=01;35:ow=01;35:'
+
+# then
+source ~/.bashrc
+```
+[ref](https://askubuntu.com/questions/466198/how-do-i-change-the-color-for-directories-with-ls-in-the-console)
+
+-----------------------
+
 - linux cmd
 ```bash
 - restart wlan0
