@@ -2,6 +2,17 @@
 
 -------------------------
 
+- git 命令
+```
+- 查看有哪些分支
+	- git branch -a 
+- 切换分支 
+	- git checkout -b demo origin/demo  
+
+```
+
+--------------------------------------
+
 - change command ls result color (directory, file, etc)
 
 ```bash
