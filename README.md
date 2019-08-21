@@ -7,7 +7,7 @@
 - 查看有哪些分支
 	- git branch -a 
 - 切换分支 
-	- git checkout -b demo origin/demo  
+	- git checkout -b demo origin/demo # git branch -a 中的输出中有remotes/origin/demo
 
 ```
 
