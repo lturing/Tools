@@ -18,6 +18,7 @@ adding the following to Preferences > Package Settings > Package Control > Setti
 
 - sublime text 3 插件
 	* A File Icon # 美化icon
+	* ayu # theme
 
 -------------------------------------
 
