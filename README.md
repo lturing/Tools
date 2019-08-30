@@ -2,6 +2,13 @@
 
 -------------------------
 
+- shell 命令
+```
+find . -name '*.py' | grep -rn "data.csv" #在当前文件夹下递归地查找以".py"为后缀的文件，并打印这些匹配出的文件中包含"data.csv"的行
+```
+
+-------------------------------------
+
 - sublime text 3 in linux "Package Control: Error downloading package. HTTP exception InvalidCertificateException"
 ```
 adding the following to Preferences > Package Settings > Package Control > Settings - User:
