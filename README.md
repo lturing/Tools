@@ -2,6 +2,22 @@
 
 -------------------------
 
+- sublime text 3 in linux "Package Control: Error downloading package. HTTP exception InvalidCertificateException"
+```
+adding the following to Preferences > Package Settings > Package Control > Settings - User:
+(urllib and wget, wasn't getting it done, so leave them out)
+
+"downloader_precedence":
+	{
+		"linux":
+		[
+			"curl"
+		]
+	},
+```
+
+-------------------------------------
+
 - git 命令
 ## 库管理
 
