@@ -2,6 +2,17 @@
 
 -------------------------
 
+- relay 无密码登录
+adding the following lines to ~/.ssh/config
+```
+Host *
+	StrictHostKeyChecking no
+        ControlMaster auto
+        ControlPath /tmp/%r@%h:%p
+
+```
+--------------------------------------
+
 - shell 命令
 ```
 grep -rn "data.csv" `find . -name '*.py'` #在当前文件夹下递归地查找以".py"为后缀的文件，并打印这些匹配出的文件中包含"data.csv"的行
