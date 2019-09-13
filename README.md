@@ -2,6 +2,21 @@
 
 -------------------------
 
+- mv: cannot stat No such file or directory in shell script
+
+```
+mv ${cwd}/${folder}'/data/*' ${cwd}/${folder}
+The quotes (') there prevent the shell from doing globbing. The * is being passed literally to the mv command, which fails since it doesn't find files called * in the directories indicated.
+
+Change this to:
+
+mv "${cwd}/${folder}/data"/* "${cwd}/${folder}"
+(Double quotes to prevent problems if you ever have a directory name with spaces in it. * outside the quotes.)
+
+You'll still get the errors for the empty directories though. (Same sort of reason: if the file doesn't find a match for the pattern, it passes the pattern itself as an argument to the command.)
+```
+-----------------------------
+
 - relay 无密码登录
 adding the following lines to ~/.ssh/config
 ```
