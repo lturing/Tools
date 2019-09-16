@@ -21,11 +21,15 @@ You'll still get the errors for the empty directories though. (Same sort of reas
 adding the following lines to ~/.ssh/config
 ```
 Host *
-	StrictHostKeyChecking no
-        ControlMaster auto
-        ControlPath /tmp/%r@%h:%p
+     ControlPersist yes
+     ControlMaster auto
+     ControlPath ~/.ssh/master-%r@%h:%p
+     Compression yes
 
 ```
+adding the following lines to ~/.bashrc
+alias relay='ssh youname@domain.com'
+
 --------------------------------------
 
 - shell 命令
