@@ -489,6 +489,9 @@ jt -r
 
 mkdir notebook && cd notebook && jupyter notebook # 创建 notebook目录，并以此目录为jupyter的文件保存路径，启动jupyter
 
+#交互式
+%matplotlib notebook
+
 ```
 
 - nginx 分享目录
