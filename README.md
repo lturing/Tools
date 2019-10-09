@@ -70,7 +70,9 @@ git branch -a # 查看所有的分支(远程)(git branch 查看本地分支)
   remotes/origin/feature_dependency_version
   remotes/origin/feature_ncn
 
-git push origin :feature_ncn # 删除远程分支 feature_ncn
+git push origin :feature_ncn # 删除远程分支 feature_ncn，推送一个空的分支到远程feature_ncn,相当于删除远程分支feature_ncn
+or 
+git push origin --delete feature_ncn 
 ```
 
 ### 克隆库
