@@ -64,7 +64,7 @@ adding the following to Preferences > Package Settings > Package Control > Setti
 
 ### 删除分支
 ```bash
-git branch -a # 查看所有的分支
+git branch -a # 查看所有的分支(远程)(git branch 查看本地分支)
   develop
 * master
   remotes/origin/feature_dependency_version
