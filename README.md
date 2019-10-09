@@ -28,7 +28,7 @@ Host *
 
 ```
 adding the following lines to ~/.bashrc
-alias relay='ssh youname@domain.com'
+alias relay='ssh yourname@domain.com'
 
 --------------------------------------
 
