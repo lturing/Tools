@@ -62,6 +62,17 @@ adding the following to Preferences > Package Settings > Package Control > Setti
 - git 命令
 ## 库管理
 
+### 删除分支
+```bash
+git branch -a # 查看所有的分支
+  develop
+* master
+  remotes/origin/feature_dependency_version
+  remotes/origin/feature_ncn
+
+git push origin :feature_ncn # 删除远程分支 feature_ncn
+```
+
 ### 克隆库
 
 ```bash
