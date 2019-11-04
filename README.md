@@ -1,6 +1,12 @@
 # Tools
 
 -------------------------
+- conda 创建虚拟环境并安装tensorflow-gpu以及cuda，cudnn等
+```
+conda create --name tf_gpu tensorflow-gpu # tf_gpu 为创建的虚拟环境的名称
+```
+------------------------------
+
 - linux 查看当前文件夹大小
 du -sh 
 
