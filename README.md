@@ -1,6 +1,10 @@
 # Tools
 
 -------------------------
+- linux 查看当前文件夹大小
+du -sh 
+
+---------------------------
 
 - mv: cannot stat No such file or directory in shell script
 
