@@ -534,6 +534,9 @@ mkdir notebook && cd notebook && jupyter notebook # 创建 notebook目录，并�
 #交互式
 %matplotlib notebook
 
+# 设置jupyter页面为英文
+LANGUAGE="" LANG=en_US.UTF-8 LC_ALL=en_US.UTF-8 jupyter notebook
+
 ```
 
 - nginx 分享目录
