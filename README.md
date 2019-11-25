@@ -1,6 +1,13 @@
 # Tools
 
 -------------------------
+- shell command
+```
+for file in `hdfs --cluster zjyprc-hadoop dfs -ls -R mazhen1/recall_by_category_6 | awk '$2!="-" && $5!=0 {print $8}'`; do hdfs --cluster zjyprc-hadoop dfs -cat $file | hdfs --cluster zjyprc-hadoop dfs -appendToFile - recall_category_7;done
+```
+
+-------------------------------
+
 - conda 创建虚拟环境并安装tensorflow-gpu以及cuda，cudnn等
 ```
 conda create --name tf_gpu tensorflow-gpu # tf_gpu 为创建的虚拟环境的名称
