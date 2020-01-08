@@ -10,7 +10,7 @@ for file in `hdfs --cluster zjyprc-hadoop dfs -ls -R mazhen1/recall_by_category_
 
 - conda 创建虚拟环境并安装tensorflow-gpu以及cuda，cudnn等
 ```
-conda create --name tf_gpu tensorflow-gpu # tf_gpu 为创建的虚拟环境的名称
+conda create --name tf-py36 python=3.6.5 tensorflow-gpu=1.14.0 # tf_gpu 为创建的虚拟环境的名称
 ```
 ------------------------------
 
