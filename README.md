@@ -1,6 +1,13 @@
 # Tools
 
 -------------------------
+- 动态查看gpu的使用效率
+```
+watch -n0.1 nvidia-smi
+```
+
+--------------------
+
 - shell command
 ```
 for file in `hdfs --cluster zjyprc-hadoop dfs -ls -R mazhen1/recall_by_category_6 | awk '$2!="-" && $5!=0 {print $8}'`; do hdfs --cluster zjyprc-hadoop dfs -cat $file | hdfs --cluster zjyprc-hadoop dfs -appendToFile - recall_category_7;done
