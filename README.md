@@ -1043,4 +1043,9 @@ file '1540353_part3.flv'
 ffmpeg -f concat -safe 0 -i file.txt -c copy output.mp4                       
 ```
 
+- 合并音频
+```
+ffmpeg -i "concat:20181021_080743.mp3|20181021_090745.mp3|20181021_100745.mp3" -acodec copy 20181021.mp3
+```
+
 ----------------------------------------------------------
