@@ -1,9 +1,19 @@
 # Tools
 
 -------------------------
+- sublime text 3添加桌面快捷(add to my favorite/dock)
+```
+# 从sublime text官网下载linux版的sublime text
+tar -xvf sublime_text_3_build_3211_x64.tar.bz2
+cd sublime_text_3
+cp sublime_text.desktop ~/.local/share/applications
+chmod a+x sublime_text.desktop # vim sublime.desktop 检查exec的路径是否正确
+```
+-----------------------------------------------------------
+
 - 动态查看gpu的使用效率
 ```
-watch -n0.1 nvidia-smi
+watch -n 0.1 -d nvidia-smi
 ```
 
 --------------------
