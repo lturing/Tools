@@ -6,7 +6,8 @@
 # 从sublime text官网下载linux版的sublime text
 tar -xvf sublime_text_3_build_3211_x64.tar.bz2
 cd sublime_text_3
-cp sublime_text.desktop ~/.local/share/applications
+cp sublime_text.desktop ~/.local/share/applications # for 当前用户
+# cp sublime_text.desktop /usr/share/applications # for all users
 chmod a+x sublime_text.desktop # vim sublime.desktop 检查exec的路径是否正确
 ```
 -----------------------------------------------------------
