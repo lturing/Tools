@@ -9,6 +9,7 @@ ffmpeg -i demo.mp4 -vf fps=1/60 out%04d.png
 ffmpeg -i demo.mp4 -vf fps=30 out%04d.png
 ```
 
+
 ----------------------
 
 - sublime text 3添加桌面快捷(add to my favorite/dock)
