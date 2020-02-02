@@ -1,6 +1,16 @@
 # Tools
 
 -------------------------
+- 将视频转化为图片
+```
+ffmpeg -i demo.mp4 -vsync 0 out%4d.png
+ffmpeg -i demo.mp4 -vf fps=30,select='between(t,2,6)+between(t,15,24)' -vsync 0 out%4d.png # 将视频中第2秒到第6秒和第15秒到第24秒的视频转化为图片
+ffmpeg -i demo.mp4 -vf fps=1/60 out%04d.png 
+ffmpeg -i demo.mp4 -vf fps=30 out%04d.png
+```
+
+----------------------
+
 - sublime text 3添加桌面快捷(add to my favorite/dock)
 ```
 # 从sublime text官网下载linux版的sublime text
