@@ -1,6 +1,13 @@
 # Tools
 
 -------------------------
+- ubuntu show all dir(root dir) in gui
+```
+sudo nautilus
+```
+
+---------------------------------------
+
 - 将视频转化为图片
 ```
 ffmpeg -i demo.mp4 -vsync 0 out%4d.png
