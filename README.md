@@ -4,6 +4,7 @@
 - Linux 常用的命令
 ```
 sudo apt remove -y purge 软件名称 # 
+watch -n 1 "ifconfig eth0" #
 ```
 
 ---------------------------
