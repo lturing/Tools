@@ -1,6 +1,12 @@
 # Tools
 
 -------------------------
+- intellij `go to` (intellij cannot find declaration to go to)
+* Right-click src folder
+* Mark Directory as > Sources Root
+
+-----------------------
+
 - Linux 常用的命令
 ```
 sudo apt remove -y purge 软件名称 # 
