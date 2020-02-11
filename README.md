@@ -1,6 +1,14 @@
 # Tools
 
 -------------------------
+- 解决ubuntu Terminal 中文乱码(????????????)
+```
+sudo locale-gen zh_CN.UTF-8
+# sudo dpkg-reconfigure locales
+```
+
+-----------------------------------------------
+
 - intellij `go to` (intellij cannot find declaration to go to)
 * Right-click src folder
 * Mark Directory as > Sources Root
