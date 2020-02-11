@@ -5,6 +5,7 @@
 ```
 sudo locale-gen zh_CN.UTF-8
 # sudo dpkg-reconfigure locales
+# sudo reboot now
 ```
 
 -----------------------------------------------
