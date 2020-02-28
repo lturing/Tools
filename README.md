@@ -1,6 +1,14 @@
 # Tools
 
 -------------------------
+- 解决ubuntu 18 蓝牙无法连接(已配对)
+```
+sudo apt-get install pulseaudio-module-bluetooth
+pactl load-module module-bluetooth-discover
+```
+
+------------------
+
 - 解决ubuntu 18 没有声音
 ```
 #alsamixer
