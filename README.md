@@ -1,6 +1,17 @@
 # Tools
 
 -------------------------
+- 解决ubuntu 18 没有声音
+```
+#alsamixer
+sudo apt-get remove alsa-base pulseaudio
+sudo apt-get install alsa-base pulseaudio
+sudo alsa force-reload
+sudo reboot now
+#alsamixer
+```
+------------------------------
+
 - 解决ubuntu Terminal 中文乱码(????????????)
 ```
 sudo locale-gen zh_CN.UTF-8
