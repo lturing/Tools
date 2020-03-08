@@ -1,6 +1,16 @@
 # Tools
 
 -------------------------
+- 树莓派cmdline.txt 备份
+
+```
+ip=192.168.137.6 dwc_otg.lpm_enable=0 console=serial0,115200 console=tty1 root=PARTUUID=dfe43a0d-02 rootfstype=ext4 elevator=deadline fsck.repair=yes rootwait
+```
+
+* /boot/cmdline.txt
+
+------------------------------
+
 - 解决ubuntu 18 蓝牙无法连接(已配对)
 ```
 sudo apt-get install pulseaudio-module-bluetooth
