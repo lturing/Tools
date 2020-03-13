@@ -81,6 +81,8 @@ cp sublime_text.desktop ~/.local/share/applications # for 当前用户
 # cp sublime_text.desktop /usr/share/applications # for all users
 chmod a+x sublime_text.desktop # vim sublime.desktop 检查exec的路径是否正确
 ```
+> desktop文件中的Icon如果是png格式的，需要将图片复制到/usr/share/icons目录下
+
 -----------------------------------------------------------
 
 - 动态查看gpu的使用效率
