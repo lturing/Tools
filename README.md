@@ -50,6 +50,7 @@ sudo locale-gen zh_CN.UTF-8
 sudo apt remove -y purge 软件名称 # 
 watch -n 1 "ifconfig eth0" #
 mvn dependency:tree -Dverbose -Dincludes=${plugin_name} #mvn dependency:tree -Dverbose -Dincludes=log4j #查看指定包的版本冲突问题
+sudo dmidecode -t memory #ubuntu查看内存信息
 ```
 
 ---------------------------
