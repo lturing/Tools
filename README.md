@@ -1,6 +1,15 @@
 # Tools
 
 -------------------------
+- [arxiv](https://arxiv.org/)[中科大镜像](http://xxx.itp.ac.cn)[ref](https://blog.csdn.net/seasermy/article/details/95176357)
+```
+中科大镜像: http://xxx.itp.ac.cn
+例如要访问的论文arxiv地址为: https://arxiv.org/pdf/1810.07217.pdf
+修改为中科大镜像地址为: http://xxx.itp.ac.cn/pdf/1810.07217.pdf
+实现arxiv上的论文的加载速度
+```
+
+-------------------------
 - 树莓派cmdline.txt 备份
 
 ```
