@@ -393,6 +393,16 @@ git config --global color.branch auto
 set ts=4  (注：ts是tabstop的缩写，设TAB宽4个空格)
 set expandtab
 
+------
+
+set nu
+set ts=4
+set expandtab
+set mouse=r
+set hlsearch
+
+
+
 对于已保存的文件，可以使用下面的方法进行空格和TAB的替换：
 TAB替换为空格：
 :set ts=4
