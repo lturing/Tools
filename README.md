@@ -1,6 +1,13 @@
 # Tools
 
+- vim自动回到上次编辑的位置(.vimrc)
+```
+if has("autocmd")
+  au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+endif
+```
 -------------------------
+
 - [arxiv](https://arxiv.org/)[中科大镜像](http://xxx.itp.ac.cn)[ref](https://blog.csdn.net/seasermy/article/details/95176357)
 ```
 中科大镜像: http://xxx.itp.ac.cn
