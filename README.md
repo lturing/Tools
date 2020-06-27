@@ -1,5 +1,11 @@
 # Tools
 
+- vim 编辑python后直接运行代码
+```
+:w !python
+```
+--------------------
+
 - vim自动回到上次编辑的位置(.vimrc)
 ```
 if has("autocmd")
