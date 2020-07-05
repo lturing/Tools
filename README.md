@@ -1,5 +1,24 @@
 # Tools
 
+- alternatives mobaxterm for ubuntu
+```
+sudo apt install sshfs
+mkdir ~/sshfs
+sshfs username@host:/home/username $HOME/sshfs
+#host:/home/username会mount在$HOME/sshfs
+```
+
+------------------------------
+
+- open website on server through ssh 
+```
+tensorboard --logdir='path_to_checkpoint_log' --p 6006 # on server 
+ssh -L 16006:127.0.0.1:6006 shengleyuan@lab.yiwise.com -p 60005 # on client 
+open http://127.0.0.1:16006 with chrome on client 
+```
+
+----------
+
 - vim 编辑python后直接运行代码
 ```
 :w !python
