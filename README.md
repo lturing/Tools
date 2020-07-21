@@ -1,4 +1,9 @@
 # Tools
+- ubuntu 18关闭终端的bell音
+```
+编辑 /etc/inputrc，找到#set bell-style none这一行，去掉前面的注释符号
+```
+--------------
 
 - alternatives mobaxterm for ubuntu
 ```
