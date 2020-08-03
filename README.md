@@ -11,6 +11,9 @@ sudo apt install sshfs
 mkdir ~/sshfs
 sshfs username@host:/home/username $HOME/sshfs
 #host:/home/username会mount在$HOME/sshfs
+
+# fix transport endpoint is not connected
+fusermount -u $mountpoint
 ```
 
 ------------------------------
