@@ -680,7 +680,9 @@ The a in ‘-aG’ is very important. Without it they’ll be removed from all o
 - jupyter 
 
 ```
-sudo apt install jupyter 
+conda install jupyter
+conda install nb_conda
+conda install ipykernel
 
 # 生成配置文件，即 ~/.jupyter/jupyter_notebook_config.py
 jupyter notebook --generate-config
