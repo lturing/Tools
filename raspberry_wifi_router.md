@@ -54,7 +54,7 @@ Once raspberry was able to connect to the router (with internet access), do
 ```shell
 sudo apt-get update
 sudo apt-get upgrade
-sudo apt-get install dnsmasq hostapd bridge-utils
+sudo apt-get install dnsmasq hostapd
 ```
 
 Now configure a static IP for wlan1 (or eth0) and static IP for wlan0 `sudo vi /etc/dhcpcd.conf`
@@ -150,7 +150,7 @@ Edit `sudo vi /etc/rc.local` and append above "exit 0" line
 iptables-restore < /etc/iptables.ipv4.nat
 ```
 
-* **only** if setting `wlan1` append to `/etc/network/interfaces` file:
+* **only** if setting `wlan1` append to `/etc/network/interfaces` file:(没用到，忽略)
     ```
     # Bridge setup
     auto br0
