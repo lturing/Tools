@@ -81,6 +81,13 @@ index-url = https://pypi.tuna.tsinghua.edu.cn/simple
 trusted-host = pypi.tuna.tsinghua.edu.cn
 ```
 
+### 扫描网络
+```
+ifconfig 
+sudo iwlist wlan1 scan
+```
+
+
 #### 安装 hostapd
 > hostapd 的说明
 
