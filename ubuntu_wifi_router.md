@@ -123,6 +123,32 @@ The main steps can be listed as following:
 
     ```
 
+## load iptable when reboot ubuntu (set once)
+```
+sudo apt-get install iptables-persistent
+sudo dpkg-reconfigure iptables-persistent
+
+# iptables-persistent will automatically load /etc/iptables/rules.v4 when startup
+iptables -F
+#ip6tables -F
+iptables --list
+iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
+iptables -A FORWARD -i eth0 -o wlan0 -m state --state RELATED,ESTABLISHED -j ACCEPT
+iptables -A FORWARD -i wlan0 -o eth0 -j ACCEPT
+
+# ipv6
+#ip6tables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
+#ip6tables -A FORWARD -i eth0 -o wlan0 -m state --state RELATED,ESTABLISHED -j ACCEPT
+#ip6tables -A FORWARD -i wlan0 -o eth0 -j ACCEPT
+
+sudo iptables-save | sudo tee /etc/iptables/rules.v4
+# or
+# iptables-save > /etc/iptables/rules.v4
+
+iptables --list
+
+```
+
 
 Then I also edited sysctl.conf (/etc/sysctl.conf): Uncomment net.ipv4.ip_forward=1 This enables IPV4 packet routing across the network adaptors. Then added the following lines:         
 ```
