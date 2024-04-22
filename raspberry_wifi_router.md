@@ -396,6 +396,8 @@ iptables -t nat -F
 iptables-restore < /etc/iptables.ipv4.nat
 #ip6tables-restore < /etc/iptables.ipv6.nat
 
+# list rule
+# sudo iptables --list
 vim wifistart 
 #!/bin/bash
 
