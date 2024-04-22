@@ -122,6 +122,16 @@ The main steps can be listed as following:
                 - 192.168.4.1/24
 
     ```
+
+
+Then I also edited sysctl.conf (/etc/sysctl.conf): Uncomment net.ipv4.ip_forward=1 This enables IPV4 packet routing across the network adaptors. Then added the following lines:         
+```
+#Disable IP6 entirely
+net.ipv6.conf.all.disable_ipv6=1
+net.ipv6.conf.default.disable_ipv6=1
+net.ipv6.conf.eth0.disable_ipv6=1
+```
+
 ## Finally:
 - Reboot your Raspberry Pi and check if you can connect to it over WiFi and can SSH.
 
