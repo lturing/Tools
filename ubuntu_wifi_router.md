@@ -1,5 +1,5 @@
-# ref
-- []()
+## ref
+- [Ubuntu_AP.md](https://gist.github.com/ExtremeGTX/ea1d1c12dde8261b263ab2fead983dc8)
 
 please refer to [raspberry_wifi_router](https://github.com/lturing/Tools/blob/master/raspberry_wifi_router.md)
 
